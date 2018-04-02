@@ -1,0 +1,80 @@
+<aside class="bg-primary">
+	<header>
+		<h2>Logo</h2>
+	</header>
+	<main>
+		<nav>
+			<a class="active" href="">Candidates</a>
+			<a href="">Link 1</a>
+			<a href="">Link 2</a>
+			<a href="">Link 3</a>
+			<a href="">Link 4</a>
+			<a href="">Link 5</a>
+		</nav>
+	</main>
+</aside>
+<div id="content">
+	<header class="page-title">
+		<h2>Candidates</h2>
+	</header>
+	<main>
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="module bg-info card">
+					<div class="content">
+						<h4>549</h4>
+						<h5>Registered</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="module bg-success card">
+					<div class="content">
+						<h4>84</h4>
+						<h5>Processed</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="module bg-warning card">
+					<div class="content">
+						<h4>120</h4>
+						<h5>Unverified</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="module bg-danger card">
+					<div class="content">
+						<h4>35</h4>
+						<h5>Dismissed</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="module mt-4">
+			<div class="content">
+				<table id="table" class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Application Date</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="c in ::$ctrl.candidates" ng-init="$ctrl.initDT($last)">
+							<td>{{c.Name}}</td>
+							<td>{{c.Email}}</td>
+							<td>{{c.ApplicationDate | date:'medium'}}</td>
+							<td>
+								<button type="button" class="btn btn-sm btn-info" ng-click="$ctrl.fetchData(c)">Fetch Data</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</main>
+</div>

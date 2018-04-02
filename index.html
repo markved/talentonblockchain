@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Demo App</title>
+
+	<link rel="stylesheet" href="./lib/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./lib/dataTables.bootstrap4.css">
+
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="./components/app-login/app-login.css">
+	<link rel="stylesheet" href="./components/app-candidates/app-candidates.css">
+
+	<script defer src="./lib/jquery-3.2.1.js"></script>
+	<script defer src="./lib/jquery.dataTables.js"></script>
+	<script defer src="./lib/dataTables.bootstrap4.js"></script>
+
+	<script defer src="./lib/angular.js"></script>
+	<script defer src="./lib/angular-animate.js"></script>
+	<script defer src="./lib/angular-ui-router.js"></script>
+	<script defer src="./lib/ui-bootstrap-custom-tpls-2.5.0.js"></script>
+
+	<script defer src="index.js"></script>
+	<script defer src="./components/app-login/app-login.js"></script>
+	<script defer src="./components/app-candidates/app-candidates.js"></script>
+	<script defer src="./components/app-fetch-data/app-fetch-data.js"></script>
+</head>
+
+<body ng-app="demoApp">
+	<ui-view></ui-view>
+</body>
+
+</html>
