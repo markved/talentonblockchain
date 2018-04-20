@@ -19,6 +19,11 @@ function IIFE(initModule)
 					component : 'appLogin'
 				},
 				{
+					name      : 'register',
+					url       : '/register',
+					component : 'appRegister'
+				},
+				{
 					name      : 'candidates',
 					url       : '/candidates',
 					component : 'appCandidates'
