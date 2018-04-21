@@ -7,11 +7,17 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "gulp serve"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "browser-sync": "^2.23.3"
+  "devDependencies": {
+    "browser-sync": "^2.23.3",
+    "gulp": "^4.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.3",
+    "pump": "^2.0.0",
+    "node-sass": "^4.7.2"
   }
 }
