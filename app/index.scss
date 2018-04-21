@@ -1,0 +1,32 @@
+.module
+{
+	background: #FFF;
+
+	> .content
+	{
+		padding : .5rem;
+	}
+}
+
+.card
+{
+	color : #FFF;
+
+	h4
+	{
+		font-size : 2rem;
+	}
+
+	h5
+	{
+		font-size : .8rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: right;
+	}
+}
+
+.modal-backdrop
+{
+	opacity : 0.5;
+}
