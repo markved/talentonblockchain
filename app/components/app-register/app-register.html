@@ -4,23 +4,30 @@
 	</header>
 	<main>
 		<form id="registration-form" class="p-4" name="form" ng-submit="form.$valid && $ctrl.goToCandidates()" ng-class="{'was-validated' : form.$submitted}" novalidate>
-			<div class="row form-group">
-				<div class="col-sm">
-					<label for="first-name">First Name</label>
-					<input id="first-name" name="firstName" ng-model="firstName" type="text" class="form-control" required>
-				</div>
-				<div class="col-sm">
-					<label for="last-name">Last Name</label>
-					<input id="last-name" name="lastName" ng-model="lastName" type="text" class="form-control" required>
-				</div>
+			<div class="form-group">
+				<label for="first-name">Full Name</label>
+				<input id="first-name" name="firstName" ng-model="$ctrl.firstName" type="text" class="form-control" required>
 			</div>
 			<div class="form-group">
 				<label for="email">Email</label>
-				<input id="email" name="email" ng-model="email" type="text" class="form-control" required>
+				<input id="email" name="email" ng-model="$ctrl.email" type="text" class="form-control" required>
 			</div>
 			<div class="form-group">
 				<label for="password">Password</label>
-				<input id="password" name="password" ng-model="password" type="password" class="form-control" required>
+				<input id="password" name="password" ng-model="$ctrl.password" type="password" class="form-control" required>
+			</div>
+			<div class="form-group">
+				<label>You are?</label>
+				<div>
+					<div class="form-check form-check-inline">
+						<input type="radio" name="type" id="type-job-seeker" ng-model="$ctrl.type" value="Candidate" class="form-check-input">
+						<label for="type-job-seeker" class="form-check-label">Job Seeker</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input type="radio" name="type" id="type-employer" ng-model="$ctrl.type" value="Recruiter" class="form-check-input">
+						<label for="type-employer" class="form-check-label">Employer</label>
+					</div>
+				</div>
 			</div>
 			<div>
 				<button type="submit" class="btn btn-block btn-primary">Register</button>

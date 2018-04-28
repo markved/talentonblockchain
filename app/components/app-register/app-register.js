@@ -16,5 +16,6 @@ function IIFE(initComponent)
 	function controller($state)
 	{
 		var ctrl = this;
+		ctrl.type = 'Candidate';
 	}
 })();
