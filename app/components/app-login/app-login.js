@@ -17,7 +17,7 @@ function IIFE(initComponent)
 	{
 		var ctrl = this;
 
-		Object.assign(ctrl, {goToCandidates});
+		Object.assign(ctrl, { goToCandidates });
 
 		function goToCandidates()
 		{

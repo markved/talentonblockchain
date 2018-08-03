@@ -1,37 +1,34 @@
-<div id="content">
-	<header class="p-3">
-		<h2 class="text-primary m-0">LOGO</h2>
-	</header>
-	<main>
-		<form id="registration-form" class="p-4" name="form" ng-submit="form.$valid && $ctrl.goToCandidates()" ng-class="{'was-validated' : form.$submitted}" novalidate>
-			<div class="form-group">
-				<label for="first-name">Full Name</label>
-				<input id="first-name" name="firstName" ng-model="$ctrl.firstName" type="text" class="form-control" required>
+<form id="registration-form" name="form" ng-submit="form.$valid && $ctrl.goToCandidates()" ng-class="{'was-validated' : form.$submitted}"
+ novalidate>
+	<div class="form-group">
+		<label for="first-name">Full Name</label>
+		<input id="first-name" name="firstName" ng-model="$ctrl.firstName" type="text" class="form-control" required>
+	</div>
+	<div class="form-group">
+		<label for="email">Email</label>
+		<input id="email" name="email" ng-model="$ctrl.email" type="text" class="form-control" required>
+	</div>
+	<div class="form-group">
+		<label for="password">Password</label>
+		<input id="password" name="password" ng-model="$ctrl.password" type="password" class="form-control" required>
+	</div>
+	<div class="form-group">
+		<label>You are?</label>
+		<div>
+			<div class="form-check form-check-inline">
+				<input type="radio" name="type" id="type-job-seeker" ng-model="$ctrl.type" value="Candidate" class="form-check-input">
+				<label for="type-job-seeker" class="form-check-label">Job Seeker</label>
 			</div>
-			<div class="form-group">
-				<label for="email">Email</label>
-				<input id="email" name="email" ng-model="$ctrl.email" type="text" class="form-control" required>
+			<div class="form-check form-check-inline">
+				<input type="radio" name="type" id="type-employer" ng-model="$ctrl.type" value="Recruiter" class="form-check-input">
+				<label for="type-employer" class="form-check-label">Employer</label>
 			</div>
-			<div class="form-group">
-				<label for="password">Password</label>
-				<input id="password" name="password" ng-model="$ctrl.password" type="password" class="form-control" required>
-			</div>
-			<div class="form-group">
-				<label>You are?</label>
-				<div>
-					<div class="form-check form-check-inline">
-						<input type="radio" name="type" id="type-job-seeker" ng-model="$ctrl.type" value="Candidate" class="form-check-input">
-						<label for="type-job-seeker" class="form-check-label">Job Seeker</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input type="radio" name="type" id="type-employer" ng-model="$ctrl.type" value="Recruiter" class="form-check-input">
-						<label for="type-employer" class="form-check-label">Employer</label>
-					</div>
-				</div>
-			</div>
-			<div>
-				<button type="submit" class="btn btn-block btn-primary">Register</button>
-			</div>
-		</form>
-	</main>
-</div>
+		</div>
+	</div>
+	<div>
+		<button type="submit" class="btn btn-block btn-primary">Register</button>
+	</div>
+</form>
+<p class="my-2 text-center">
+	<a ui-sref="landing.login">Already have an account? Log in.</a>
+</p>

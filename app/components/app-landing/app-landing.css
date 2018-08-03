@@ -1,0 +1,63 @@
+app-landing {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+}
+
+app-landing aside {
+  flex: 1 0 auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+app-landing #content {
+  flex: 0 1 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/bg.jpg");
+  background-size: 100% 100%;
+  color: #FFF;
+}
+
+app-landing aside > header,
+app-landing #content > header {
+  flex: 1 0 auto;
+}
+
+app-landing aside > main,
+app-landing #content > main {
+  flex: 0 1 100%;
+}
+
+app-landing aside > header,
+app-landing aside > main,
+app-landing #content > header,
+app-landing #content > main {
+  padding: 2rem;
+}
+
+app-landing aside > header h2 {
+  font-weight: 800;
+}
+
+app-landing #content > header nav {
+  display: flex;
+}
+
+app-landing #content > header nav a {
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 3em;
+}
+
+app-landing aside > main,
+app-landing #content > main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=app-landing.css.map */

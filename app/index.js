@@ -5,21 +5,28 @@ function IIFE(initModule)
 {
 	angular.module('demoApp', ['ngAnimate', 'ui.router', 'ui.bootstrap', 'ui.bootstrap.tpls', 'ui.bootstrap.modal']).config(config).run(run);
 
-	function config($stateProvider, $urlServiceProvider)
+	function config($stateProvider, $urlServiceProvider, $locationProvider)
 	{
-		$urlServiceProvider.rules.otherwise({ state: 'login' });
+		$locationProvider.html5Mode(true);
+		$urlServiceProvider.rules.otherwise({ state: 'landing.login' });
 		getStates().forEach(state => $stateProvider.state(state.name, state));
 
 		function getStates()
 		{
 			return [
 				{
-					name      : 'login',
+					name      : 'landing',
+					url       : '',
+					component : 'appLanding',
+					abstract  : true
+				},
+				{
+					name      : 'landing.login',
 					url       : '/login',
 					component : 'appLogin'
 				},
 				{
-					name      : 'register',
+					name      : 'landing.register',
 					url       : '/register',
 					component : 'appRegister'
 				},
