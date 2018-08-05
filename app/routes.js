@@ -35,6 +35,16 @@ function config($stateProvider, $urlServiceProvider, $locationProvider)
         name: 'main.candidates',
         url: '/candidates',
         component: 'appCandidates'
+      },
+      {
+        name: 'main.careers',
+        url: '/careers',
+        component: 'appCareers'
+      },
+      {
+        name: 'main.profile',
+        url: '/profile',
+        component: 'appProfile'
       }
     ];
   }

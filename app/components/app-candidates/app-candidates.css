@@ -18,4 +18,19 @@ app-candidates #content header {
   align-items: center;
 }
 
+app-candidates .card-custom {
+  color: #FFF;
+}
+
+app-candidates .card-custom h4 {
+  font-size: 2rem;
+}
+
+app-candidates .card-custom h5 {
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: right;
+}
+
 /*# sourceMappingURL=app-candidates.css.map */

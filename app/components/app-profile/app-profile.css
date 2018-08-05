@@ -1,0 +1,28 @@
+app-profile #content {
+  display: flex;
+  flex-direction: column;
+  background: #EEE;
+  height: 100%;
+}
+
+app-profile #content > main {
+  padding: 2rem;
+  flex: 0 1 100%;
+}
+
+app-profile #content > header {
+  padding: 1rem;
+}
+
+app-profile #content header {
+  background: #FFF;
+  display: flex;
+  align-items: center;
+}
+
+app-profile .avatar {
+  width: 100px;
+  border-radius: 99px;
+}
+
+/*# sourceMappingURL=app-profile.css.map */

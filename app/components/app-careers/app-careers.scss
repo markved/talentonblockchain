@@ -1,4 +1,4 @@
-app-candidates
+app-careers
 {
 	#content {
 		display: flex;
@@ -21,21 +21,16 @@ app-candidates
 		align-items: center;
 	}
 
-	.card-custom
-	{
-		color : #FFF;
+	.card-header {
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-		h4
-		{
-			font-size : 2rem;
-		}
-
-		h5
-		{
-			font-size : .8rem;
-			text-transform: uppercase;
-			font-weight: bold;
-			text-align: right;
+		h4 {
+			color : #FFF;
+			font-weight: 800;
+			margin : 0;
 		}
 	}
 }

@@ -1,0 +1,73 @@
+<div id="content">
+	<header class="page-title">
+		<h2>
+			<span>Jobs</span>
+			<small class="text-muted">Search vacancies by various parameters</small>
+		</h2>
+	</header>
+	<main>
+		<div class="module">
+			<div class="content">
+				<div class="form-group">
+					<input class="form-control" placeholder="Search">
+				</div>
+				<div class="row form-group">
+					<div class="col">
+						<label>Job Positions</label>
+						<select class="form-control"></select>
+					</div>
+					<div class="col">
+						<label>Schedule</label>
+						<select class="form-control"></select>
+					</div>
+					<div class="col">
+						<label>Vacancy Type</label>
+						<select class="form-control"></select>
+					</div>
+					<div class="col">
+						<label>Geolocation</label>
+						<input class="form-control" placeholder="Enter your address">
+					</div>
+					<div class="col">
+						<label>Publication Date</label>
+						<input type="date" class="form-control">
+					</div>
+				</div>
+				<div class="row form-group align-items-end">
+					<div class="col">
+						<label>Companies</label>
+						<input class="form-control">
+					</div>
+					<div class="col">
+						<label>Skills</label>
+						<input class="form-control">
+					</div>
+					<div class="col">
+						<button class="btn btn-block btn-primary">Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="module mt-5">
+			<div class="content">
+				<div class="row">
+					<div class="col-4 mb-3" ng-repeat="x in $ctrl.array track by $index">
+						<div class="card">
+							<div class="card-header bg-primary">
+								<h4>Job Title</h4>
+							</div>
+							<div class="card-body">
+								<h5 class="card-title text-primary">Job Title</h5>
+								<h6 class="card-subtitle mb-1 text-muted">Company Name</h6>
+								<h6 class="card-subtitle mb-2 text-muted">Publish Date</h6>
+								<p class="card-text">Job Description</p>
+								<a href="" class="card-link">View</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</div>

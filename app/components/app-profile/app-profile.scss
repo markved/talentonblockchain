@@ -1,13 +1,15 @@
-app-candidates
+app-profile
 {
 	#content {
 		display: flex;
 		flex-direction: column;
 		background: #EEE;
+		height: 100%;
 	}
 
 	#content > main {
 		padding: 2rem;
+		flex : 0 1 100%;
 	}
 
 	#content > header {
@@ -21,21 +23,8 @@ app-candidates
 		align-items: center;
 	}
 
-	.card-custom
-	{
-		color : #FFF;
-
-		h4
-		{
-			font-size : 2rem;
-		}
-
-		h5
-		{
-			font-size : .8rem;
-			text-transform: uppercase;
-			font-weight: bold;
-			text-align: right;
-		}
+	.avatar {
+		width: 100px;
+		border-radius : 99px;
 	}
 }

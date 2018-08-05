@@ -2,27 +2,24 @@
   background: #FFF;
 }
 
-.module > .content {
-  padding: .5rem;
-}
-
-.card {
-  color: #FFF;
-}
-
-.card h4 {
-  font-size: 2rem;
-}
-
-.card h5 {
-  font-size: .8rem;
+.module > .title {
   text-transform: uppercase;
-  font-weight: bold;
-  text-align: right;
+  color: #888;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.module > .content {
+  padding: 1rem;
 }
 
 .modal-backdrop {
   opacity: 0.5;
+}
+
+.flex-y {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=index.css.map */
