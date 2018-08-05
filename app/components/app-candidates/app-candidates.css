@@ -1,53 +1,15 @@
-app-candidates {
-  display: flex;
-  min-height: 100vh;
-  margin: 0;
-}
-
-app-candidates aside {
-  flex: 1 0 auto;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-}
-
 app-candidates #content {
-  flex: 0 1 100%;
   display: flex;
   flex-direction: column;
   background: #EEE;
 }
 
-app-candidates aside > header,
-app-candidates aside > main,
 app-candidates #content > main {
   padding: 2rem;
 }
 
 app-candidates #content > header {
   padding: 1rem;
-}
-
-app-candidates aside > header h2 {
-  font-weight: 800;
-  color: #FFF;
-}
-
-app-candidates aside nav {
-  display: flex;
-  flex-direction: column;
-}
-
-app-candidates aside nav a {
-  font-size: 1.1rem;
-  margin: .75em 0;
-  color: #FFF;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-app-candidates aside nav a.active {
-  font-weight: 600;
 }
 
 app-candidates #content header {

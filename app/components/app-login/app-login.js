@@ -21,7 +21,7 @@ function IIFE(initComponent)
 
 		function goToCandidates()
 		{
-			$state.go('candidates');
+			$state.go('main.candidates');
 		}
 	}
 })();

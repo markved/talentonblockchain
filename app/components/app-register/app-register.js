@@ -13,7 +13,7 @@ function IIFE(initComponent)
 		};
 	}
 
-	function controller($state)
+	function controller()
 	{
 		var ctrl = this;
 		ctrl.type = 'Candidate';

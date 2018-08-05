@@ -1,53 +1,17 @@
 app-candidates
 {
-	display : flex;
-	min-height: 100vh;
-	margin: 0;
-
-	aside {
-		flex: 1 0 auto;
-		width: 20%;
-		display: flex;
-		flex-direction: column;
-	}
-
 	#content {
-		flex: 0 1 100%;
 		display: flex;
 		flex-direction: column;
 		background: #EEE;
 	}
 
-	aside > header,
-	aside > main,
 	#content > main {
 		padding: 2rem;
 	}
 
 	#content > header {
 		padding : 1rem;
-	}
-
-	aside > header h2 {
-		font-weight: 800;
-		color : #FFF;
-	}
-
-	aside nav {
-		display: flex;
-		flex-direction: column;
-	}
-
-	aside nav a {
-		font-size : 1.1rem;
-		margin : .75em 0;
-		color : #FFF;
-		font-weight: 300;
-		text-transform : uppercase;
-	}
-
-	aside nav a.active {
-		font-weight : 600;
 	}
 
 	#content header {
