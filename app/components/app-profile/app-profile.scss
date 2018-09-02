@@ -27,4 +27,13 @@ app-profile
 		width: 100px;
 		border-radius : 99px;
 	}
+
+	.btn-linkedin {
+		color : #FFF;
+		background-color : #0073b1;
+
+		&:hover, &:focus {
+			background-color: #006097;
+		}
+	}
 }

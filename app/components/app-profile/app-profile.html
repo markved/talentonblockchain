@@ -9,8 +9,8 @@
 					<h3 class="title">Details</h3>
 					<div class="content text-center">
 						<section class="flex-y align-items-center justify-content-center">
-							<img class="avatar" src="../../images/user-default.png" alt="">
-							<h4>Employee Name</h4>
+							<img class="avatar" ng-src="{{$ctrl.user.imageURL}}" alt="">
+							<h4>{{$ctrl.user.name || 'Employee Name'}}</h4>
 						</section>
 						<section class="mt-5">
 							<h5>Education</h5>
@@ -31,6 +31,7 @@
 				<div class="module" id="actions">
 					<h3 class="title">Actions</h3>
 					<div class="content">
+						<button type="button" class="btn btn-block btn-linkedin" ng-click="$ctrl.fillDataFromLinkedIn()">Fill Personal Data from LinkedIn</button>
 						<button type="button" class="btn btn-block btn-primary">Edit Personal Details</button>
 						<button type="button" class="btn btn-block btn-primary">Edit Education Details</button>
 						<button type="button" class="btn btn-block btn-primary">Edit Employment Details</button>

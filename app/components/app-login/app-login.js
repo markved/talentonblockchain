@@ -13,15 +13,20 @@ function IIFE(initComponent)
 		};
 	}
 
-	function controller($state)
+	function controller($rootScope, $state)
 	{
 		var ctrl = this;
 
-		Object.assign(ctrl, { goToCandidates });
-
-		function goToCandidates()
+		Object.assign(ctrl,
 		{
-			$state.go('main.candidates');
+			allowedUsers : /shubham|aniket|ved/,
+			afterLogin
+		});
+
+		function afterLogin()
+		{
+			$rootScope.user = ctrl.email;
+			$state.go('main.profile');
 		}
 	}
 })();

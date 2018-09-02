@@ -25,4 +25,13 @@ app-profile .avatar {
   border-radius: 99px;
 }
 
+app-profile .btn-linkedin {
+  color: #FFF;
+  background-color: #0073b1;
+}
+
+app-profile .btn-linkedin:hover, app-profile .btn-linkedin:focus {
+  background-color: #006097;
+}
+
 /*# sourceMappingURL=app-profile.css.map */
